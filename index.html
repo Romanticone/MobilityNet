@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="MobilityNet is an NSF-funded open cyberinfrastructure for privacy-preserving, socially informed mobility data.">
-  <meta name="theme-color" content="#092b38">
+  <meta name="theme-color" content="#12314b">
   <title>MobilityNet | NSF Cyberinfrastructure for Mobility Data</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23092b38'/%3E%3Ccircle cx='18' cy='42' r='6' fill='%23ffb45c'/%3E%3Ccircle cx='33' cy='18' r='6' fill='%237dd9d0'/%3E%3Ccircle cx='48' cy='40' r='6' fill='%23f9f5ed'/%3E%3Cpath d='M22 38 30 23M37 22l8 13M24 42h18' fill='none' stroke='%23f9f5ed' stroke-width='3'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="script.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,10 +27,10 @@
       </a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#mission">Mission</a>
-        <a href="#research">Research</a>
+        <a href="#overview">Overview</a>
+        <a href="#framework">Framework</a>
         <a href="#data">Data</a>
-        <a href="#outputs">Outputs</a>
+        <a href="#outputs">Publications</a>
         <a href="#team">Team</a>
       </div>
       <a class="nav-cta" href="#data">Explore data <span aria-hidden="true">↘</span></a>
@@ -38,35 +38,23 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" id="overview">
       <div class="shell hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span>NSF-funded cyberinfrastructure</span><span>2024–2027</span></p>
-          <h1>Mobility data,<br><em>opened responsibly.</em></h1>
-          <p class="hero-lead">We build open infrastructure for generating and sharing privacy-preserving synthetic mobility data, so researchers can study how people and cities move without exposing individuals.</p>
+          <h1>Trustworthy mobility data for open research</h1>
+          <p class="hero-lead">MobilityNet is a cyberinfrastructure for cross-domain mobility data generation and sharing. It combines generative AI with privacy protection to help researchers study mobility without exposing individual traces.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#data">Explore the data catalog</a>
-            <a class="text-link" href="#mission">Discover the project <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#framework">View the framework <span aria-hidden="true">↓</span></a>
           </div>
         </div>
-        <div class="mobility-map reveal" aria-label="Abstract visualization of connected urban mobility flows">
-          <div class="map-label map-label-a">CURATE</div>
-          <div class="map-label map-label-b">INTERPRET</div>
-          <div class="map-label map-label-c">GENERATE</div>
-          <svg viewBox="0 0 640 560" role="img" aria-hidden="true">
-            <g class="street-grid">
-              <path d="M20 118h580M82 24v512M20 252h600M188 18v522M334 18v522M495 18v522M22 425h590"></path>
-              <path d="m0 322 640-210M78 560 590 0"></path>
-            </g>
-            <g class="flow flow-one"><path d="M54 410C135 352 165 387 227 311s105-92 170-52 110 1 174-121"></path></g>
-            <g class="flow flow-two"><path d="M95 75c57 73 29 145 107 177s176-48 221 50 89 114 154 148"></path></g>
-            <g class="flow flow-three"><path d="M18 220c109-15 123 104 215 122s128-96 209-78 104 106 181 75"></path></g>
-            <g class="nodes">
-              <circle cx="54" cy="410" r="9"></circle><circle cx="227" cy="311" r="7"></circle><circle cx="397" cy="259" r="10"></circle><circle cx="571" cy="138" r="7"></circle>
-              <circle cx="95" cy="75" r="7"></circle><circle cx="202" cy="252" r="10"></circle><circle cx="423" cy="302" r="7"></circle><circle cx="577" cy="450" r="10"></circle>
-            </g>
-          </svg>
-          <div class="map-readout"><span>34.0522° N</span><span>118.2437° W</span><span>PRIVACY LAYER: ON</span></div>
+        <div class="hero-panel reveal" aria-label="MobilityNet research pipeline">
+          <p class="panel-label">MobilityNet research pipeline</p>
+          <div class="pipeline-step"><span>01</span><div><strong>Cross-domain real data</strong><small>Transportation, cellular, payment, and urban sensing</small></div></div>
+          <div class="pipeline-step"><span>02</span><div><strong>Generative AI and privacy</strong><small>Diffusion models, contextual learning, and differential privacy</small></div></div>
+          <div class="pipeline-step"><span>03</span><div><strong>Research-ready synthetic data</strong><small>Useful mobility traces with measurable privacy protection</small></div></div>
+          <div class="panel-footer"><span>CURATE</span><span>INTERPRET</span><span>GENERATE</span><span>SHARE</span></div>
         </div>
       </div>
       <div class="shell project-stats reveal" aria-label="Project statistics">
@@ -80,13 +68,37 @@
     <section class="section mission" id="mission">
       <div class="shell two-column">
         <div class="section-intro reveal">
-          <p class="section-number">01 / Mission</p>
-          <h2>Unlocking mobility research while protecting the people behind the data.</h2>
+          <p class="section-number">01 / Why MobilityNet</p>
+          <h2>Mobility data can drive discovery, but access and trust remain barriers</h2>
         </div>
         <div class="mission-copy reveal">
-          <p class="large-copy">Human mobility data can reshape transportation, public health, urban planning, and network design. Yet the most valuable data is often proprietary, expensive, uneven, or too sensitive to share.</p>
-          <p>MobilityNet creates a shared, open-source cyberinfrastructure that transforms cross-domain mobility signals into useful, interpretable, and privacy-preserving synthetic datasets. The platform supports rigorous research without requiring direct access to sensitive individual traces.</p>
-          <div class="award-line"><span>Supported by the U.S. National Science Foundation</span><strong>Awards #2411151 · #2411152 · #2411153</strong></div>
+          <p class="large-copy">Most mobility data remains proprietary or sensitive. Even when data owners share records for social good, researchers must address quality, interpretation, and privacy before the data can support reliable science.</p>
+          <div class="challenge-list">
+            <article><span>01</span><div><h3>Limited access</h3><p>Proprietary ownership keeps valuable mobility observations out of reach for much of the research community.</p></div></article>
+            <article><span>02</span><div><h3>Low usability</h3><p>Incomplete, noisy, and fragmented records make cross-domain analysis difficult.</p></div></article>
+            <article><span>03</span><div><h3>Privacy risk</h3><p>Detailed movement traces can reveal sensitive information about individuals and communities.</p></div></article>
+          </div>
+          <div class="award-line"><span>Supported by the U.S. National Science Foundation</span><strong>Awards #2411151, #2411152, #2411153</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section framework" id="framework">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-number">02 / Framework</p>
+          <h2>From sensitive signals to research-ready synthetic data</h2>
+          <p>The framework connects data integration, contextual modeling, privacy-aware generation, and evaluation.</p>
+        </div>
+        <div class="framework-flow reveal">
+          <article><span>01</span><h3>Curate</h3><p>Align heterogeneous signals from transportation, communication, payment, and urban systems.</p></article>
+          <article><span>02</span><h3>Interpret</h3><p>Recover activity context and meaningful behavioral patterns from sparse mobility records.</p></article>
+          <article><span>03</span><h3>Generate</h3><p>Use diffusion models and differential privacy to synthesize useful mobility traces.</p></article>
+          <article><span>04</span><h3>Evaluate and share</h3><p>Measure utility, fidelity, fairness, and privacy before releasing research assets.</p></article>
+        </div>
+        <div class="trace-feature reveal">
+          <div class="trace-copy"><p class="mini-label">Data representations</p><h3>Different mobility questions require different traces</h3><p>MobilityNet models both human activity traces, which are spatially discrete and temporally irregular, and GPS trajectories, which are spatially continuous and sampled at regular intervals.</p></div>
+          <img src="assets/mobility-trace-types.webp" alt="Comparison of a discrete human activity trace and a continuous GPS trajectory">
         </div>
       </div>
     </section>
@@ -94,29 +106,19 @@
     <section class="section research" id="research">
       <div class="shell">
         <div class="section-heading reveal">
-          <p class="section-number">02 / Research</p>
-          <h2>From fragmented signals<br>to trusted synthetic data.</h2>
-          <p>Three connected research layers form the core of MobilityNet.</p>
+          <p class="section-number">03 / Generative models</p>
+          <h2>Two-stage diffusion frameworks for mobility synthesis</h2>
+          <p>Coarse-to-fine generation preserves broad movement structure while producing detailed trajectories and activities.</p>
         </div>
-        <div class="research-stack">
-          <article class="research-row reveal">
-            <div class="research-index">01</div>
-            <div class="research-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="8" y="12" width="20" height="16" rx="3"></rect><rect x="36" y="8" width="20" height="20" rx="3"></rect><rect x="20" y="38" width="24" height="16" rx="3"></rect><path d="M28 20h8M21 28l9 10m13-10-8 10"></path></svg></div>
-            <div><h3>Cross-domain data curation</h3><p>Integrate cellular, transportation, payment-network, and urban-sensor signals into a unified corpus, addressing the bias and fragmentation of single-source mobility datasets.</p></div>
-            <span class="research-tag">CONNECT</span>
-          </article>
-          <article class="research-row reveal">
-            <div class="research-index">02</div>
-            <div class="research-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22"></circle><path d="M18 34c6-10 11-13 16-8s8 6 14-3M22 43h20M32 10v9"></path></svg></div>
-            <div><h3>Socially informed interpretation</h3><p>Use large language models to enrich sparse mobility records with context about activity purpose, behavioral patterns, and urban dynamics, making raw signals more scientifically meaningful.</p></div>
-            <span class="research-tag">UNDERSTAND</span>
-          </article>
-          <article class="research-row reveal">
-            <div class="research-index">03</div>
-            <div class="research-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M12 45c8-3 10-19 19-19s10 17 21 4"></path><path d="M12 19c11 7 12 19 21 17s9-15 19-17"></path><circle cx="12" cy="45" r="3"></circle><circle cx="52" cy="19" r="3"></circle></svg></div>
-            <div><h3>Privacy-preserving generation</h3><p>Develop diffusion-based generative models with privacy and fairness constraints, balancing fidelity, analytical utility, demographic representation, and protection from re-identification.</p></div>
-            <span class="research-tag">SYNTHESIZE</span>
-          </article>
+        <div class="model-stack">
+          <figure class="model-card reveal">
+            <div class="model-copy"><span>Human activity traces</span><h3>SynHAT</h3><p>Generates coarse-grained latent states, then synthesizes fine-grained activities with spatial filtering, temporal sampling, and semantic alignment.</p><a href="https://dl.acm.org/doi/epdf/10.1145/3810213" target="_blank" rel="noopener">Read the ACM IMWUT / UbiComp 2026 paper ↗</a></div>
+            <div class="model-image"><img src="assets/synhat-framework.webp" alt="Two-stage SynHAT framework for human activity trace synthesis"></div>
+          </figure>
+          <figure class="model-card reveal">
+            <div class="model-copy"><span>Location-based social networks</span><h3>GeoGen</h3><p>Generates a latent movement sequence, then reconstructs a fine-grained check-in trajectory with contextual POI representations.</p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37111" target="_blank" rel="noopener">Read the AAAI 2026 paper ↗</a></div>
+            <div class="model-image"><img src="assets/geogen-framework.webp" alt="Two-stage GeoGen framework for location-based social network trajectory generation"></div>
+          </figure>
         </div>
       </div>
     </section>
@@ -125,13 +127,14 @@
       <div class="shell">
         <div class="impact-header reveal">
           <p class="section-number">Research enabled</p>
-          <h2>One infrastructure,<br>many scientific questions.</h2>
+          <h2>Mobility data for science and engineering</h2>
         </div>
         <div class="impact-grid reveal">
-          <article><span>01</span><h3>Transportation &amp; cities</h3><p>Infrastructure design, congestion modeling, urban services, and autonomous mobility.</p></article>
-          <article><span>02</span><h3>Public health</h3><p>Epidemic modeling, access to care, exposure analysis, and emergency response.</p></article>
-          <article><span>03</span><h3>Networks &amp; systems</h3><p>Demand-driven 5G deployment, sensing, and urban cyber-physical systems.</p></article>
-          <article><span>04</span><h3>Human behavior</h3><p>Economic activity, spatial inequality, consumer behavior, and geography.</p></article>
+          <article><span>01</span><h3>Pandemic control</h3><p>Model population movement and contact patterns during public health emergencies.</p></article>
+          <article><span>02</span><h3>Location-based services</h3><p>Study check-in behavior, recommendations, and urban activity patterns.</p></article>
+          <article><span>03</span><h3>5G deployment</h3><p>Estimate spatial demand to support network planning and service coverage.</p></article>
+          <article><span>04</span><h3>Resource allocation</h3><p>Connect mobility demand with transportation and public service capacity.</p></article>
+          <article><span>05</span><h3>Emergency response</h3><p>Support evacuation analysis and response planning under disruptive events.</p></article>
         </div>
       </div>
     </section>
@@ -139,7 +142,7 @@
     <section class="section data-section" id="data">
       <div class="shell">
         <div class="section-heading light reveal">
-          <p class="section-number">03 / Data catalog</p>
+          <p class="section-number">04 / Data catalog</p>
           <h2>Research-ready mobility datasets.</h2>
           <p>Explore curated real-world datasets and synthetic releases from MobilityNet research.</p>
         </div>
@@ -160,8 +163,8 @@
     <section class="section outputs" id="outputs">
       <div class="shell">
         <div class="section-heading reveal">
-          <p class="section-number">04 / Open outputs</p>
-          <h2>Methods you can inspect,<br>adapt, and build upon.</h2>
+          <p class="section-number">05 / Open outputs</p>
+          <h2>Open methods and project publications</h2>
         </div>
         <div class="tool-grid">
           <article class="tool-feature reveal">
@@ -203,7 +206,7 @@
     <section class="section team-section" id="team">
       <div class="shell">
         <div class="section-heading light reveal">
-          <p class="section-number">05 / Team</p>
+          <p class="section-number">06 / Team</p>
           <h2>A multi-university collaboration.</h2>
           <p>Researchers across computer science, engineering, transportation, and urban planning.</p>
         </div>
@@ -232,7 +235,7 @@
   <footer class="footer">
     <div class="shell footer-grid">
       <div><a class="brand footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><circle cx="10" cy="30" r="4"></circle><circle cx="22" cy="10" r="4"></circle><circle cx="34" cy="29" r="4"></circle><path d="m13 27 7-13m5 0 7 11M14 30h16"></path></svg><span>MobilityNet</span></a><p>Open-source cyberinfrastructure for responsible mobility data research.</p></div>
-      <div><p class="footer-label">Explore</p><a href="#mission">Mission</a><a href="#research">Research</a><a href="#data">Data catalog</a><a href="#outputs">Outputs</a></div>
+      <div><p class="footer-label">Explore</p><a href="#overview">Overview</a><a href="#framework">Framework</a><a href="#data">Data catalog</a><a href="#outputs">Publications</a></div>
       <div><p class="footer-label">Institutions</p><span>Rutgers University</span><span>Florida State University</span><span>University of California, Los Angeles</span></div>
       <div class="footer-nsf"><p class="footer-label">Supported by</p><strong>National Science<br>Foundation</strong><span>Awards 2411151, 2411152, 2411153</span></div>
     </div>
