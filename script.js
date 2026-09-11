@@ -1,14 +1,5 @@
 const datasets = [
   {
-    name: "aBeacon: Courier Arrival Detection",
-    description: "BLE sensing, location traces, and manual reports from 31,131 couriers at 2,466 merchant locations.",
-    type: "trajectory",
-    label: "Mobility trace",
-    scale: "31,131 couriers",
-    source: "Rutgers / Alibaba",
-    link: "https://tianchi.aliyun.com/dataset/dataDetail?dataId=76359"
-  },
-  {
     name: "ETC Transaction Dataset V0",
     description: "Anonymized highway transactions with origins, destinations, and timestamps for mobility-flow research.",
     type: "flow",
