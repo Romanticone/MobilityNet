@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23092b38'/%3E%3Ccircle cx='18' cy='42' r='6' fill='%23ffb45c'/%3E%3Ccircle cx='33' cy='18' r='6' fill='%237dd9d0'/%3E%3Ccircle cx='48' cy='40' r='6' fill='%23f9f5ed'/%3E%3Cpath d='M22 38 30 23M37 22l8 13M24 42h18' fill='none' stroke='%23f9f5ed' stroke-width='3'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=9">
-  <script src="script.js?v=6" defer></script>
+  <link rel="stylesheet" href="styles.css?v=10">
+  <script src="script.js?v=7" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +30,8 @@
         <a href="#overview">Overview</a>
         <a href="#framework">Framework</a>
         <a href="#data">Data</a>
-        <a href="#outputs">Publications</a>
+        <a href="tools.html">Tools</a>
+        <a href="publications.html">Publications</a>
         <a href="#team">Team</a>
         <a href="#feedback">Feedback</a>
       </div>
@@ -162,52 +163,16 @@
       </div>
     </section>
 
-    <section class="section outputs" id="outputs">
+    <section class="section outputs outputs-hub" id="outputs">
       <div class="shell">
         <div class="section-heading reveal">
-          <p class="section-number">05 / Open outputs</p>
-          <h2>Open-source tools and project publications</h2>
+          <p class="section-number">05 / Project outputs</p>
+          <h2>Explore tools and publications</h2>
+          <p>Browse reusable research code and publications developed through MobilityNet.</p>
         </div>
-        <div class="tool-grid">
-          <article class="tool-feature reveal">
-            <div class="tool-top"><span>IMWUT / UbiComp 2026</span><span>01</span></div>
-            <h3>SynHAT</h3>
-            <p>A computationally efficient, coarse-to-fine diffusion framework for synthesizing human activity traces.</p>
-            <a href="https://github.com/Rongchao98/SynHAT" target="_blank" rel="noopener">View code on GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="tool-feature reveal">
-            <div class="tool-top"><span>AAAI 2026</span><span>02</span></div>
-            <h3>GeoGen</h3>
-            <p>A two-stage, coarse-to-fine framework for generating fine-grained synthetic location-based social-network trajectories.</p>
-            <a href="https://github.com/Rongchao98/GeoGen" target="_blank" rel="noopener">View code on GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="tool-feature reveal">
-            <div class="tool-top"><span>SDM 2025</span><span>03</span></div>
-            <h3>AutoSTDiff</h3>
-            <p>An autoregressive spatiotemporal denoising diffusion model for high-fidelity asynchronous trajectory generation.</p>
-            <a href="https://github.com/Rongchao98/AutoSTDiff" target="_blank" rel="noopener">View code on GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="tool-feature reveal">
-            <div class="tool-top"><span>KDD 2024</span><span>04</span></div>
-            <h3>POIPrivacy</h3>
-            <p>An open implementation of attack functions for auditing privacy risks in point-of-interest recommendation systems.</p>
-            <a href="https://github.com/KunlinChoi/POIPrivacy" target="_blank" rel="noopener">View code on GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-
-        <div class="publication-block reveal">
-          <div class="publication-title"><p class="section-number">Selected publications</p><p>2024–2026</p></div>
-          <div class="publication-list">
-            <article><time>2026</time><div><h3><a href="https://arxiv.org/pdf/2607.08357" target="_blank" rel="noopener">MobiDiff: Semantic-Aware Multi-Channel Discrete Diffusion for Human Mobility Data Generation</a></h3><p>Rongchao Xu, Lin Jiang, Dahai Yu, Ximiao Li, Taichi Liu, Desheng Zhang, Yuan Tian, and Guang Wang</p></div><span>arXiv</span></article>
-            <article><time>2026</time><div><h3><a href="https://dl.acm.org/doi/epdf/10.1145/3810213" target="_blank" rel="noopener">SynHAT: A Two-stage Coarse-to-Fine Diffusion Framework for Synthesizing Human Activity Traces</a></h3><p>Rongchao Xu, Lin Jiang, Dahai Yu, Ximiao Li, and Guang Wang</p></div><span>ACM IMWUT / UbiComp</span></article>
-            <article><time>2026</time><div><h3><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37111" target="_blank" rel="noopener">GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation</a></h3><p>Rongchao Xu, Kunlin Cai, Lin Jiang, Zhiqing Hong, Yuan Tian, and Guang Wang</p></div><span>AAAI</span></article>
-            <article><time>2026</time><div><h3><a href="https://arxiv.org/pdf/2603.03701" target="_blank" rel="noopener">UrbanHuRo: A Two-Layer Human-Robot Collaboration Framework for the Joint Optimization of Heterogeneous Urban Services</a></h3><p>Tonmoy Dey+, Lin Jiang+, Zheng Dong, and Guang Wang</p></div><span>ICRA</span></article>
-            <article><time>2025</time><div><h3><a href="https://epubs.siam.org/doi/10.1137/1.9781611978520.58" target="_blank" rel="noopener">AutoSTDiff: Autoregressive Spatio-Temporal Denoising Diffusion Model for Asynchronous Trajectory Generation</a></h3><p>Rongchao Xu, Zhiqing Hong, and Guang Wang</p></div><span>SDM</span></article>
-            <article><time>2025</time><div><h3><a href="https://dl.acm.org/doi/10.1145/3748636.3762709" target="_blank" rel="noopener">UQGNN: Uncertainty Quantification of Graph Neural Networks for Multivariate Spatiotemporal Prediction</a></h3><p>Dahai Yu, Dingyi Zhuang, Lin Jiang, Rongchao Xu, Xinyue Ye, Yuheng Bu, Shenhao Wang, and Guang Wang</p></div><span>ACM SIGSPATIAL</span></article>
-            <article><time>2025</time><div><h3><a href="https://dl.acm.org/doi/10.1145/3748636.3764155" target="_blank" rel="noopener">REALISM: A Regulatory Framework for Coordinated Scheduling in Multi-Operator Shared Micromobility Services</a></h3><p>Heng Tan, Hua Yan, Yukun Yuan, Guang Wang, and Yu Yang</p></div><span>ACM SIGSPATIAL</span></article>
-            <article><time>2025</time><div><h3><a href="https://dl.acm.org/doi/10.1145/3710921" target="_blank" rel="noopener">A Mixed-Methods Study of Wait Time Perception and Discrepancy in Technology-Mediated Mobility Systems</a></h3><p>Guang Wang, Vivek Singh, and Desheng Zhang</p></div><span>ACM CSCW</span></article>
-            <article><time>2024</time><div><h3><a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671758" target="_blank" rel="noopener">Where Have You Been? A Study of Privacy Risk for Point-of-Interest Recommendation</a></h3><p>Kunlin Cai, Jinghuai Zhang, Will Shand, Zhiqing Hong, Guang Wang, Desheng Zhang, Jianfeng Chi, and Yuan Tian</p></div><span>ACM KDD</span></article>
-          </div>
+        <div class="output-cards reveal">
+          <a class="output-card" href="tools.html"><span class="output-card-index">01 / Code</span><strong>Open-source tools</strong><p>Access SynHAT, GeoGen, AutoSTDiff, and POIPrivacy implementations.</p><span class="output-card-link">Explore 4 tools ↗</span></a>
+          <a class="output-card" href="publications.html"><span class="output-card-index">02 / Papers</span><strong>Project publications</strong><p>Read MobilityNet research on mobility generation, prediction, services, and privacy.</p><span class="output-card-link">Browse 9 publications ↗</span></a>
         </div>
       </div>
     </section>
@@ -288,7 +253,7 @@
   <footer class="footer">
     <div class="shell footer-grid">
       <div><a class="brand footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><circle cx="10" cy="30" r="4"></circle><circle cx="22" cy="10" r="4"></circle><circle cx="34" cy="29" r="4"></circle><path d="m13 27 7-13m5 0 7 11M14 30h16"></path></svg><span>MobilityNet</span></a><p>Open-source cyberinfrastructure for responsible mobility data research.</p></div>
-      <div><p class="footer-label">Explore</p><a href="#overview">Overview</a><a href="#framework">Framework</a><a href="#data">Data catalog</a><a href="#outputs">Publications</a><a href="#feedback">Feedback</a></div>
+      <div><p class="footer-label">Explore</p><a href="#overview">Overview</a><a href="#framework">Framework</a><a href="#data">Data catalog</a><a href="tools.html">Open-source tools</a><a href="publications.html">Publications</a><a href="#feedback">Feedback</a></div>
       <div><p class="footer-label">Institutions</p><span>Rutgers University</span><span>Florida State University</span><span>University of California, Los Angeles</span></div>
       <div class="footer-nsf"><p class="footer-label">Supported by</p><strong>National Science<br>Foundation</strong><span>Awards 2411151, 2411152, 2411153</span></div>
     </div>

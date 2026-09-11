@@ -86,16 +86,18 @@ function renderDatasets() {
   }).join("");
 }
 
-filters.forEach((button) => {
-  button.addEventListener("click", () => {
-    activeFilter = button.dataset.filter;
-    filters.forEach((item) => item.classList.toggle("active", item === button));
-    renderDatasets();
+if (list && search) {
+  filters.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.filter;
+      filters.forEach((item) => item.classList.toggle("active", item === button));
+      renderDatasets();
+    });
   });
-});
 
-search.addEventListener("input", renderDatasets);
-renderDatasets();
+  search.addEventListener("input", renderDatasets);
+  renderDatasets();
+}
 
 const menuButton = document.querySelector(".menu-button");
 const navLinks = document.querySelector("#nav-links");
@@ -123,4 +125,5 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-document.querySelector("#year").textContent = new Date().getFullYear();
+const year = document.querySelector("#year");
+if (year) year.textContent = new Date().getFullYear();
