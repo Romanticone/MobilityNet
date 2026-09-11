@@ -6,7 +6,7 @@ const datasets = [
     label: "Synthetic activity trace",
     scale: "4 cities · 3 countries",
     source: "MobilityNet / FSU",
-    link: "https://dl.acm.org/doi/epdf/10.1145/3810213"
+    link: "https://github.com/Rongchao98/SynHAT/tree/main/syntheticHATs"
   },
   {
     name: "GeoGen Synthetic LBSN Trajectories",
@@ -15,7 +15,7 @@ const datasets = [
     label: "Synthetic trajectory",
     scale: "AAAI 2026",
     source: "MobilityNet / FSU",
-    link: "https://github.com/Rongchao98/GeoGen"
+    link: "https://github.com/Rongchao98/GeoGen/tree/main/data"
   },
   {
     name: "AutoSTDiff Synthetic Trajectories",
@@ -24,7 +24,7 @@ const datasets = [
     label: "Synthetic trajectory",
     scale: "SDM 2025",
     source: "MobilityNet / FSU",
-    link: "https://github.com/Rongchao98/AutoSTDiff"
+    link: "https://github.com/Rongchao98/AutoSTDiff/tree/main/data"
   },
   {
     name: "ETC Transaction Dataset V0",
