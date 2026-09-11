@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23092b38'/%3E%3Ccircle cx='18' cy='42' r='6' fill='%23ffb45c'/%3E%3Ccircle cx='33' cy='18' r='6' fill='%237dd9d0'/%3E%3Ccircle cx='48' cy='40' r='6' fill='%23f9f5ed'/%3E%3Cpath d='M22 38 30 23M37 22l8 13M24 42h18' fill='none' stroke='%23f9f5ed' stroke-width='3'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=7">
   <script src="script.js?v=6" defer></script>
 </head>
 <body>
@@ -219,18 +219,35 @@
           <p>Researchers across computer science, engineering, transportation, and urban planning.</p>
         </div>
         <div class="team-groups reveal">
-          <div class="team-group">
-            <div class="institution"><span>RU</span><div><strong>Rutgers University</strong><small>Lead institution</small></div></div>
-            <ul><li><strong>Desheng Zhang</strong><span>Lead PI · Computer Science</span></li><li><strong>Robert B. Noland</strong><span>Co-PI · Urban Planning</span></li><li><strong>Jing (Peter) Jin</strong><span>Co-PI · Engineering</span></li><li><strong>Dimitris Metaxas</strong><span>Co-PI · Computer Science</span></li><li><strong>Chin-Wei Chen</strong><span>Postdoctoral Researcher</span></li><li><strong>Youngseo Kweon</strong><span>PhD Student</span></li><li><strong>Taichi Liu</strong><span>PhD Student</span></li></ul>
-          </div>
-          <div class="team-group fsu">
-            <div class="institution"><span>FS</span><div><strong>Florida State University</strong><small>Partner institution</small></div></div>
-            <ul><li><strong>Guang Wang</strong><span>FSU PI · Computer Science</span></li><li><strong>Eren Erman Ozguven</strong><span>Co-PI · Civil Engineering</span></li><li><strong>Rongchao Xu</strong><span>PhD Student</span></li><li><strong>Lin Jiang</strong><span>PhD Student</span></li></ul>
-          </div>
-          <div class="team-group ucla">
-            <div class="institution"><span>LA</span><div><strong>UCLA</strong><small>Partner institution</small></div></div>
-            <ul><li><strong>Yuan Tian</strong><span>UCLA PI · Computer Science</span></li><li><strong>Zihang Xiang</strong><span>Postdoctoral Researcher</span></li><li><strong>Kunlin Cai</strong><span>PhD Student</span></li></ul>
-          </div>
+          <section class="team-group" aria-labelledby="rutgers-team">
+            <div class="institution"><span>RU</span><div><strong id="rutgers-team">Rutgers University</strong><small>Lead institution</small></div></div>
+            <div class="member-grid">
+              <a class="member-card" href="https://people.cs.rutgers.edu/~dz220/" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/desheng-zhang.webp" alt="" loading="lazy"><span><strong>Desheng Zhang</strong><small>Lead PI · Computer Science</small></span></a>
+              <article class="member-card"><span class="member-photo member-initials" aria-hidden="true">RN</span><span><strong>Robert B. Noland</strong><small>Co-PI · Urban Planning</small></span></article>
+              <a class="member-card" href="https://cee.rutgers.edu/jing-peter-jin" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/jing-jin.webp" alt="" loading="lazy"><span><strong>Jing (Peter) Jin</strong><small>Co-PI · Engineering</small></span></a>
+              <a class="member-card" href="https://dimitris.metaxas.cs.rutgers.edu/" target="_blank" rel="noopener"><span class="member-photo member-initials" aria-hidden="true">DM</span><span><strong>Dimitris Metaxas</strong><small>Co-PI · Computer Science</small></span></a>
+              <article class="member-card"><span class="member-photo member-initials" aria-hidden="true">CC</span><span><strong>Chin-Wei Chen</strong><small>Postdoctoral Researcher</small></span></article>
+              <article class="member-card"><span class="member-photo member-initials" aria-hidden="true">YK</span><span><strong>Youngseo Kweon</strong><small>PhD Student</small></span></article>
+              <a class="member-card" href="https://scholar.google.com/citations?user=ISXmB9MAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/taichi-liu.webp" alt="" loading="lazy"><span><strong>Taichi Liu</strong><small>PhD Student</small></span></a>
+            </div>
+          </section>
+          <section class="team-group fsu" aria-labelledby="fsu-team">
+            <div class="institution"><span>FS</span><div><strong id="fsu-team">Florida State University</strong><small>Partner institution</small></div></div>
+            <div class="member-grid">
+              <a class="member-card" href="https://www.cs.fsu.edu/department/faculty/guang/" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/guang-wang.webp" alt="" loading="lazy"><span><strong>Guang Wang</strong><small>FSU PI · Computer Science</small></span></a>
+              <a class="member-card" href="https://scholar.google.com/citations?user=inIoIaoAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/eren-ozguven.webp" alt="" loading="lazy"><span><strong>Eren Erman Ozguven</strong><small>Co-PI · Civil Engineering</small></span></a>
+              <a class="member-card" href="https://github.com/Rongchao98" target="_blank" rel="noopener"><span class="member-photo member-initials" aria-hidden="true">RX</span><span><strong>Rongchao Xu</strong><small>PhD Student</small></span></a>
+              <a class="member-card" href="https://scholar.google.com/citations?user=G66TbJYAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/lin-jiang.webp" alt="" loading="lazy"><span><strong>Lin Jiang</strong><small>PhD Student</small></span></a>
+            </div>
+          </section>
+          <section class="team-group ucla" aria-labelledby="ucla-team">
+            <div class="institution"><span>LA</span><div><strong id="ucla-team">UCLA</strong><small>Partner institution</small></div></div>
+            <div class="member-grid">
+              <a class="member-card" href="https://scholar.google.com/citations?user=ja0GtqgAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/yuan-tian.webp" alt="" loading="lazy"><span><strong>Yuan Tian</strong><small>UCLA PI · Computer Science</small></span></a>
+              <a class="member-card" href="https://scholar.google.com/citations?user=A7N2C0kAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img class="member-photo" src="assets/team/zihang-xiang.webp" alt="" loading="lazy"><span><strong>Zihang Xiang</strong><small>Postdoctoral Researcher</small></span></a>
+              <a class="member-card" href="https://github.com/KunlinChoi" target="_blank" rel="noopener"><span class="member-photo member-initials" aria-hidden="true">KC</span><span><strong>Kunlin Cai</strong><small>PhD Student</small></span></a>
+            </div>
+          </section>
         </div>
         <div class="partners reveal">
           <p>Extended research network</p>
