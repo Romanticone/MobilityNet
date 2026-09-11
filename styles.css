@@ -154,7 +154,10 @@ button, input { font: inherit; }
 .publication-list time, .publication-list article > span { font-family: "DM Mono", monospace; font-size: 12px; color: var(--red); }
 .publication-list article > span { justify-self: end; padding: 4px 8px; border: 1px solid var(--line); color: var(--ink); height: fit-content; }
 .publication-list h3 { margin: 0 0 7px; font-size: 15px; line-height: 1.5; }
+.publication-list h3 a { text-decoration: none; }
+.publication-list h3 a:hover { color: var(--red); text-decoration: underline; text-underline-offset: 4px; }
 .publication-list p { margin: 0; color: var(--muted); font-size: 12px; }
+.publication-list .funding { margin-top: 7px; color: var(--red); font-family: "DM Mono", monospace; }
 
 .team-section { color: white; background: var(--ink); }
 .team-groups { display: grid; grid-template-columns: 1.2fr 1fr .8fr; border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
