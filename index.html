@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23092b38'/%3E%3Ccircle cx='18' cy='42' r='6' fill='%23ffb45c'/%3E%3Ccircle cx='33' cy='18' r='6' fill='%237dd9d0'/%3E%3Ccircle cx='48' cy='40' r='6' fill='%23f9f5ed'/%3E%3Cpath d='M22 38 30 23M37 22l8 13M24 42h18' fill='none' stroke='%23f9f5ed' stroke-width='3'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=12">
   <script src="script.js?v=7" defer></script>
 </head>
 <body>
@@ -109,9 +109,9 @@
     <section class="section research" id="research">
       <div class="shell">
         <div class="section-heading reveal">
-          <p class="section-number">03 / Generative models</p>
-          <h2>Two-stage diffusion frameworks for mobility synthesis</h2>
-          <p>Coarse-to-fine generation preserves broad movement structure while producing detailed trajectories and activities.</p>
+          <p class="section-number">03 / Research highlights</p>
+          <h2>Generative mobility models and privacy-aware recommendation</h2>
+          <p>MobilityNet advances synthetic mobility data while examining privacy risks in location-based AI systems.</p>
         </div>
         <div class="model-stack">
           <figure class="model-card reveal">
@@ -121,6 +121,19 @@
           <figure class="model-card reveal">
             <div class="model-copy"><span>Location-based social networks</span><h3>GeoGen</h3><p>Generates a latent movement sequence, then reconstructs a fine-grained check-in trajectory with contextual POI representations.</p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37111" target="_blank" rel="noopener">Read the AAAI 2026 paper ↗</a></div>
             <div class="model-image"><img src="assets/geogen-framework.webp" alt="Two-stage GeoGen framework for location-based social network trajectory generation"></div>
+          </figure>
+          <figure class="model-card privacy-card reveal">
+            <div class="model-copy"><span>Privacy in location-based AI</span><h3>Where Have You Been?</h3><p>Introduces data extraction and membership inference attacks to examine whether POI recommendation models expose visited locations or training participation.</p><a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671758" target="_blank" rel="noopener">Read the ACM KDD 2024 paper ↗</a></div>
+            <div class="model-image privacy-model-image" role="img" aria-label="Privacy audit of point-of-interest recommendation models">
+              <div class="privacy-flow">
+                <div class="privacy-node privacy-input"><span>Mobility history</span><div class="poi-sequence" aria-hidden="true"><i></i><b></b><i></i><b></b><i></i></div><small>Visited POIs</small></div>
+                <span class="privacy-arrow" aria-hidden="true">→</span>
+                <div class="privacy-node privacy-model"><span>POI recommender</span><strong>Model</strong><small>Location-based AI</small></div>
+                <span class="privacy-arrow" aria-hidden="true">→</span>
+                <div class="privacy-audits"><div><span>01</span><strong>Data extraction</strong><small>Visited locations</small></div><div><span>02</span><strong>Membership inference</strong><small>Training participation</small></div></div>
+              </div>
+              <p class="privacy-caption">Privacy auditing for location-based recommendations</p>
+            </div>
           </figure>
         </div>
       </div>
