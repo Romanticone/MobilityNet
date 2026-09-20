@@ -37,7 +37,7 @@ const datasets = [
   },
   {
     name: "Electric Vehicle GPS Dataset V0",
-    description: "One day of longitude, latitude, time, and speed observations from electric taxis in Shenzhen, China.",
+    description: "One day of longitude, latitude, time, and speed observations from over 600 electric vehicles.",
     type: "trajectory",
     label: "GPS trajectory",
     scale: "1.15M records",
