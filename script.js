@@ -27,6 +27,15 @@ const datasets = [
     link: "https://github.com/Rongchao98/AutoSTDiff/tree/main/data"
   },
   {
+    name: "E4GEN PEMS-SF Transportation Data",
+    description: "Processed freeway traffic occupancy data used by E4GEN, with 1,320 daily station sequences and 144 ten-minute observations per day.",
+    type: "timeseries",
+    label: "Traffic time series",
+    scale: "1,320 sequences · 144 steps",
+    source: "E4GEN / Caltrans PeMS",
+    link: "https://github.com/LinJiang18/E4GEN/tree/main/Data/Extreme_Data/Transportation"
+  },
+  {
     name: "ETC Transaction Dataset V0",
     description: "Anonymized highway transactions with origins, destinations, and timestamps for mobility-flow research.",
     type: "flow",
