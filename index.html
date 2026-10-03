@@ -62,7 +62,7 @@
       <div class="shell project-stats reveal" aria-label="Project statistics">
         <div><strong>03</strong><span>Partner universities</span></div>
         <div><strong>06</strong><span>Open datasets</span></div>
-        <div><strong>09</strong><span>Project publications</span></div>
+        <div><strong>10</strong><span>Project publications</span></div>
         <div><strong>18+</strong><span>Partner institutions</span></div>
       </div>
     </section>
@@ -111,7 +111,7 @@
         <div class="section-heading reveal">
           <p class="section-number">03 / Research highlights</p>
           <h2>Generative mobility models and privacy protection</h2>
-          <p>MobilityNet advances synthetic mobility data while examining privacy risks in location-based AI systems.</p>
+          <p>MobilityNet advances synthetic mobility and transportation time-series data while examining privacy risks in location-based AI systems.</p>
         </div>
         <div class="model-stack">
           <figure class="model-card reveal">
@@ -121,6 +121,44 @@
           <figure class="model-card reveal">
             <div class="model-copy"><span>Location-based social networks</span><h3>GeoGen</h3><p>Generates a latent movement sequence, then reconstructs a fine-grained check-in trajectory with contextual POI representations.</p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37111" target="_blank" rel="noopener">Read the AAAI 2026 paper ↗</a></div>
             <div class="model-image"><img src="assets/geogen-framework.webp" alt="Two-stage GeoGen framework for location-based social network trajectory generation"></div>
+          </figure>
+          <figure class="model-card reveal">
+            <div class="model-copy"><span>Transportation time series</span><h3>E4GEN</h3><p>Generates interpretable extreme events and is evaluated on transportation data, including traffic occupancy and traffic speed time series, alongside other real-world domains.</p><a href="https://arxiv.org/pdf/2606.01634" target="_blank" rel="noopener">Read the NeurIPS 2026 paper ↗</a></div>
+            <div class="model-image" role="img" aria-label="E4GEN generates extreme transportation time-series events across time and frequency views">
+              <svg viewBox="0 0 760 270" width="100%" aria-hidden="true">
+                <defs>
+                  <linearGradient id="e4gen-bg" x1="0" x2="1"><stop offset="0" stop-color="#eef7f6"/><stop offset="1" stop-color="#eef4f8"/></linearGradient>
+                  <linearGradient id="e4gen-line" x1="0" x2="1"><stop offset="0" stop-color="#2d9b91"/><stop offset="1" stop-color="#236fa1"/></linearGradient>
+                  <marker id="e4gen-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7b929e"/></marker>
+                </defs>
+                <rect x="1" y="1" width="758" height="268" rx="12" fill="url(#e4gen-bg)" stroke="#d4e0e5"/>
+                <g transform="translate(28 34)">
+                  <text x="0" y="0" fill="#58707d" font-family="DM Mono, monospace" font-size="12">TRANSPORTATION DATA</text>
+                  <rect x="0" y="24" width="205" height="165" rx="8" fill="#fff" stroke="#d4e0e5"/>
+                  <text x="16" y="49" fill="#12314b" font-family="Manrope, sans-serif" font-size="14" font-weight="700">Traffic time series</text>
+                  <path d="M16 135 C38 132,44 126,62 130 S88 136,100 124 S119 86,130 125 S150 132,162 118 S180 62,191 126" fill="none" stroke="url(#e4gen-line)" stroke-width="4"/>
+                  <line x1="16" y1="145" x2="191" y2="145" stroke="#d4e0e5"/>
+                  <circle cx="130" cy="125" r="5" fill="#ff9d4d"/><circle cx="180" cy="69" r="6" fill="#ff9d4d"/>
+                  <text x="16" y="173" fill="#6d818b" font-family="Manrope, sans-serif" font-size="12">Occupancy · Speed · Extremes</text>
+                </g>
+                <path d="M247 136 H303" stroke="#7b929e" stroke-width="2" marker-end="url(#e4gen-arrow)"/>
+                <g transform="translate(320 58)">
+                  <rect width="150" height="132" rx="66" fill="#12314b"/>
+                  <text x="75" y="58" text-anchor="middle" fill="#79d1c9" font-family="DM Mono, monospace" font-size="12">CROSS-VIEW</text>
+                  <text x="75" y="82" text-anchor="middle" fill="#fff" font-family="Newsreader, Georgia, serif" font-size="25">E4GEN</text>
+                  <text x="75" y="104" text-anchor="middle" fill="#cbd8de" font-family="Manrope, sans-serif" font-size="11">event-level generation</text>
+                </g>
+                <path d="M486 136 H542" stroke="#7b929e" stroke-width="2" marker-end="url(#e4gen-arrow)"/>
+                <g transform="translate(558 58)">
+                  <rect width="174" height="132" rx="8" fill="#fff" stroke="#d4e0e5"/>
+                  <text x="16" y="28" fill="#12314b" font-family="Manrope, sans-serif" font-size="14" font-weight="700">Explainable extremes</text>
+                  <rect x="16" y="45" width="142" height="12" rx="6" fill="#dceceb"/><rect x="16" y="45" width="110" height="12" rx="6" fill="#2d9b91"/>
+                  <rect x="16" y="69" width="142" height="12" rx="6" fill="#dfe8ee"/><rect x="16" y="69" width="126" height="12" rx="6" fill="#236fa1"/>
+                  <rect x="16" y="93" width="142" height="12" rx="6" fill="#f2e6d8"/><rect x="16" y="93" width="95" height="12" rx="6" fill="#ff9d4d"/>
+                  <text x="16" y="122" fill="#6d818b" font-family="Manrope, sans-serif" font-size="11">shape · frequency · severity</text>
+                </g>
+              </svg>
+            </div>
           </figure>
           <figure class="model-card privacy-card reveal">
             <div class="model-copy"><span>Privacy in location-based AI</span><h3>Mobility Privacy</h3><p>Introduces data extraction and membership inference attacks to examine whether POI recommendation models expose visited locations or training participation.</p><a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671758" target="_blank" rel="noopener">Read the ACM KDD 2024 paper ↗</a></div>
@@ -185,7 +223,7 @@
         </div>
         <div class="output-cards reveal">
           <a class="output-card" href="tools.html"><span class="output-card-index">01 / Code</span><strong>Open-source tools</strong><p>Access SynHAT, GeoGen, AutoSTDiff, and POIPrivacy implementations.</p><span class="output-card-link">Explore 4 tools ↗</span></a>
-          <a class="output-card" href="publications.html"><span class="output-card-index">02 / Papers</span><strong>Project publications</strong><p>Read MobilityNet research on mobility generation, prediction, services, and privacy.</p><span class="output-card-link">Browse 9 publications ↗</span></a>
+          <a class="output-card" href="publications.html"><span class="output-card-index">02 / Papers</span><strong>Project publications</strong><p>Read MobilityNet research on mobility generation, prediction, services, and privacy.</p><span class="output-card-link">Browse 10 publications ↗</span></a>
         </div>
       </div>
     </section>
